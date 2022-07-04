@@ -1,0 +1,126 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 100px;
+}
+.exp-empresas .experiencia-texto {
+  font-family: Fira Sans;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+  text-align: left;
+  margin-bottom: 24px;
+  align-self: start;
+  color: #525252;
+}
+.exp-empresas .experiencia-texto strong {
+  color: #000000;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2;
+  padding: 20px;
+  position: relative;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.experiencia .empresa-titulo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  grid-row: 1;
+}
+.experiencia .empresa-texto {
+  max-width: 40ch;
+  margin: 8px;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #525252;
+  grid-column: 1;
+}
+.habilidades {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  color: #141414;
+  grid-area: 2 / 2;
+  align-items: flex-start;
+}
+.habilidades li {
+  font-size: 0.875rem;
+  margin-top: 2px 4px;
+  padding: 2px 16px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.empresa .empresa-ano {
+  position: absolute;
+  top: 21px;
+  left: -100px;
+}
+.empresa::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("/img/detalhe.svg") no-repeat center;
+  width: 8px;
+  height: 40px;
+  left: -8px;
+  top: 8px;
+}
+.titulo-exp {
+  text-transform: uppercase;
+  font-size: 9rem;
+  word-break: break-all;
+  max-width: 4ch;
+  margin: 0px;
+  color: #e0e0e0;
+}
+@media (max-width: 1000px) {
+  .experiencia .habilidades {
+    flex-direction: column;
+    place-content: start;
+  }
+}
+@media (max-width: 800px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+  .empresa .empresa-ano {
+    position: initial;
+    margin-right: 24px;
+  }
+  .experiencia .habilidades {
+    flex-direction: row;
+  }
+  .experiencia .empresa-texto {
+    margin-bottom: 8px;
+    max-width: 80ch;
+  }
+
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .titulo-exp {
+    text-transform: uppercase;
+    font-size: 4rem;
+    word-break: normal;
+    color: #525252;
+  }
+}
+@media (max-width: 500px) {
+  .experiencia .experiencia-texto {
+    font-size: 1.2rem;
+  }
+}

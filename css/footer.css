@@ -1,0 +1,56 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px;
+  padding-top: 120px;
+  gap: 100px;
+  background-color: #000000;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  background: url("/img/detalhe.svg") no-repeat center center;
+  top: -50px;
+  left: 80px;
+}
+.conversa {
+  max-width: 35ch;
+  align-self: left;
+  font-size: 1.125rem;
+  color: #cccccc;
+  margin-top: 0%;
+  margin-left: 64px;
+}
+.direitos {
+  font-size: 00.875rem;
+  color: #8f8f8f;
+  margin-left: 64px;
+}
+.contato {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.contato li {
+  margin-top: 24px;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .conversa {
+    font-size: 1.2rem;
+  }
+  .contato {
+    margin-left: 64px;
+  }
+}

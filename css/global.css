@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box; 
+ font-family: "Fira Sans", Arial, sans-serif; 
+}
+p,h1,h2,h3{
+  margin: 0;
+  padding: 0;
+  }
+  ul{
+    margin: 0;
+   padding: 0;
+   list-style: none ;
+     }
+     a{
+       text-decoration: none;
+     }
+     img{
+      max-width: 100% ;
+      display: block;
+     }
+     @media(max-width:400px){
+      .experiencia .titulo-exp{
+      font-size: 2rem;               
+      }
+      .formacao .for-titulo{
+        font-size: 2rem;       
+      }
+    }

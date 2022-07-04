@@ -1,0 +1,148 @@
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 100px;
+  background-color: #141414;
+}
+.for-titulo {
+  text-transform: uppercase;
+  font-size: 9rem;
+  word-break: break-all;
+  max-width: 4ch;
+  margin: 0px;
+  color: #000000;
+}
+.fomacao-texto {
+  font-family: Fira Sans;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+  color: #a3a3a3;
+  max-width: 40ch;
+}
+.instituicoes {
+  margin-top: 60px;
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.instituicoes li {
+  border-radius: 5px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 200px;
+  background-color: #000000;
+  color: #ffffff;
+  justify-content: center;
+}
+.curso {
+  margin-top: 24px;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  position: relative;
+}
+.curso::before {
+  content: "";
+  background: url("./img/detalhe.svg") no-repeat center;
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  left: -28px;
+  top: 8px;
+}
+.nivel {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+}
+.intituto {
+  margin-top: 64px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+}
+.intensivos {
+  margin-top: 64px;
+  position: relative;
+  align-items: center;
+  color: #a3a3a3;
+}
+
+.intensivos li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #ffffff;
+  margin: 20px 0;
+}
+.intensivos-titulo {
+  color: #a3a3a3;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  grid-column: 1 / -1;
+  position: relative;
+}
+.intensivos-titulo::before {
+  content: "";
+  display: block;
+  background: url("./img/cursos.svg") no-repeat center center;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -32px;
+  top: -3px;
+}
+.idiomas {
+  margin-top: 62px;
+}
+.idiomas-titulo {
+  position: relative;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  font-size: 00.875rem;
+}
+.idiomas-titulo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/idiomas.svg") no-repeat center center;
+  width: 24px;
+  height: 24px;
+  left: -32px;
+  top: -3px;
+}
+.idiomas li {
+  margin: 20px 0;
+  color: #a3a3a3;
+  font-size: 1.125rem;
+}
+.idiomas li strong {
+  color: #ffffff;
+  font-weight: 400;
+}
+@media (max-width: 800px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .for-titulo {
+    font-size: 4rem;
+    word-break: normal;
+    max-width: 4ch;
+  }
+
+  .idiomas {
+    margin-left: 32px;
+  }
+  .intensivos {
+    margin-left: 32px;
+  }
+}
