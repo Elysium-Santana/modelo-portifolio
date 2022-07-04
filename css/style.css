@@ -1,4 +1,5 @@
-@import "/header.css";
+@import url("/css/header.css");
+;
 @import "global.css";
 @import "introducao.css";
 @import "experiencia.css";
